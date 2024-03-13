@@ -9,8 +9,8 @@ class PantallaIni_0483 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pagina Inicial Garcia0483"),
-        backgroundColor: Colors.blueGrey,
+        title: const Text("Pagina Inicial Garcia0483"),
+        backgroundColor: Colors.lightBlueAccent,
       ),
       body: Center(
         child:
@@ -19,13 +19,19 @@ class PantallaIni_0483 extends StatelessWidget {
             onPressed: () {
               Navigator.pushNamed(context, "/Pantalla1_0483");
             }, //fin onpressed
-            child: Text("Mover a pantalla1"),
+            child: const Text("Ejemplo card"),
           ),
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, "/Pantalla2_0483");
             }, //fin onpressed
             child: Text("Mover a pantalla2"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/Pantalla3_0483");
+            }, //fin onpressed
+            child: Text("Mover a pantalla3"),
           )
         ]),
       ),

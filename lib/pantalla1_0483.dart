@@ -10,16 +10,20 @@ class Pantalla1_0483 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pantalla1 Garcia0483'),
-        backgroundColor: Colors.brown,
+        backgroundColor: Colors.grey,
       ),
       body: Center(
-        child: Column(
-          children: [
-            ElevatedButton(
-              onPressed: () {}, // fin onpressed
-              child: const Text("Pantalla1"),
-            )
-          ], //fin de niños
+        child: Container(
+          color: Colors.cyanAccent,
+          width: 350,
+          height: 200,
+          padding: EdgeInsets.all(32),
+          margin: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+          alignment: Alignment.center,
+          child: Text(
+            "Tarjeta Garcia0483",
+            style: TextStyle(fontSize: 30),
+          ),
         ),
       ),
     );

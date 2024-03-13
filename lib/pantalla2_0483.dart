@@ -9,14 +9,25 @@ class Pantalla2_0483 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pantalla2 Garcia0483'),
+        title: const Text('Pantalla2 Garcia0483'),
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: Center(
-        child: Text(
-          'pantalla2',
+          child: Container(
+        color: Colors.grey,
+        constraints: BoxConstraints(
+          minHeight: 100,
+          minWidth: 200,
+          maxHeight: 300,
+          maxWidth: 300,
         ),
-      ),
+        child: Center(
+          child: Text(
+            "Tarjeta Garcia0483",
+            style: TextStyle(fontSize: 30),
+          ),
+        ),
+      )),
     );
     ;
   } // fin widget
